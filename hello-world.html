@@ -11,12 +11,18 @@
 
 ​<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
 
-<script>
- // we'll write our app in between this script tag.
- const myElement = React.createElement('h1', {className: 'heading'}, 'Hello world!');
+<script type='text/babel'>
+// we'll write our app in between this script tag.
 
- ReactDOM.render(myElement, document.getElementById('target'));
+// React.createElement 
+// const myElement = React.createElement('h1', {className: 'heading'}, 'Hello world!')
+
+// JSX = html-like code in javascript
+const myElement = <h1 className="heading">Hello World</h1>
+
+ ReactDOM.render(myElement, document.getElementById('target'))
 </script>
 ​
 </html>
