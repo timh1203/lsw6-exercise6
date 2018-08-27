@@ -14,6 +14,9 @@
 
 <script>
  // we'll write our app in between this script tag.
+ const myElement = React.createElement('h1', {className: 'heading'}, 'Hello world!');
+
+ ReactDOM.render(myElement, document.getElementById('target'));
 </script>
 ​
 </html>
